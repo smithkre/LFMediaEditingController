@@ -133,7 +133,7 @@
         }
     }
     
-    _HUDLabel.text = text ? text : [NSBundle LFME_localizedStringForKey:@"_LFME_processHintStr"];
+    _HUDLabel.text = @"Saving..";
     
     [_HUDIndicatorView startAnimating];
     UIView *view = isTop ? [[UIApplication sharedApplication] keyWindow] : self.view;
