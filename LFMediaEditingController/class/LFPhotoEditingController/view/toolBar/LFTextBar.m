@@ -134,7 +134,7 @@
     CGFloat editCancelWidth = [self.cancelButtonTitle boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, _customTopbarHeight) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:font} context:nil].size.width + 30;
     UIButton *cancelButton = [[UIButton alloc] initWithFrame:CGRectMake(margin, topSubViewY, editCancelWidth, size)];
     cancelButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
-    [cancelButton setTitle:self.cancelButtonTitle forState:UIControlStateNormal];
+    [cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     cancelButton.titleLabel.font = font;
     [cancelButton setTitleColor:self.cancelButtonTitleColorNormal forState:UIControlStateNormal];
     [cancelButton addTarget:self action:@selector(cancelButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -142,7 +142,7 @@
     CGFloat editOkWidth = [self.oKButtonTitle boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, _customTopbarHeight) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:font} context:nil].size.width + 30;
     UIButton *finishButton = [[UIButton alloc] initWithFrame:CGRectMake(self.width - editOkWidth - margin, topSubViewY, editOkWidth, size)];
     finishButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
-    [finishButton setTitle:self.oKButtonTitle forState:UIControlStateNormal];
+    [finishButton setTitle:@"Save" forState:UIControlStateNormal];
     finishButton.titleLabel.font = font;
     [finishButton setTitleColor:self.oKButtonTitleColorNormal forState:UIControlStateNormal];
     [finishButton addTarget:self action:@selector(finishButtonClick) forControlEvents:UIControlEventTouchUpInside];
