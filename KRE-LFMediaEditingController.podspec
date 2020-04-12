@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
-s.name         = 'LFMediaEditingController'
-s.version      = '1.3.8'
+s.name         = 'KRE-LFMediaEditingController'
+s.version      = '2.0.3'
 s.summary      = 'Media Editor (edit photo、edit video)'
-s.homepage     = 'https://github.com/lincf0912/LFMediaEditingController'
+s.homepage     = 'https://github.com/smithkre/LFMediaEditingController'
 s.license      = 'MIT'
-s.author       = { 'lincf0912' => 'dayflyking@163.com' }
+s.author       = { 'Smith Krengkrud' => 'smith.kre@gmail.com' }
 s.platform     = :ios
 s.ios.deployment_target = '7.0'
-s.source       = { :git => 'https://github.com/lincf0912/LFMediaEditingController.git', :tag => s.version, :submodules => true }
+s.source       = { :git => 'https://github.com/smithkre/LFMediaEditingController.git', :tag => s.version, :submodules => true }
 s.requires_arc = true
 s.source_files = 'LFMediaEditingController/class/*.{h,m}'
 s.public_header_files = 'LFMediaEditingController/class/*.h'
